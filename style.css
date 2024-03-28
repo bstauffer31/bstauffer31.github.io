@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border: 2px solid #808080;
+  background-color: maroon;
+  text-align: center;
+}
+
+.images{
+  display:flex;
+  flex-wrap:wrap;
+  border: 10px solid black;
+}
+
+.images img {
+  width: 600px;
+  height: 400px;
+  margin: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jerseys{
+  width: 500px;
+  height: 400px;
+  margin: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
