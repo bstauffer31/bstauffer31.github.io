@@ -1,39 +1,241 @@
 html {
   height: 100%;
   width: 100%;
-  background-color: grey;
+  background-color: #c2bebe;
 }
 
-.div1 {
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 80px 80% ;
+  grid-template-rows: 60px 100%;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 2 / 2 / 3 / 3; }
+
+.topHolder {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  border: 2px solid #808080;
-  background-color: maroon;
-  text-align: center;
 }
 
-.images{
-  display:flex;
-  flex-wrap:wrap;
-  border: 10px solid black;
+.topIcon {
+  padding: 10px;
+  flex: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.images img {
-  width: 600px;
-  height: 400px;
-  margin: 5px;
+.icon{
+  font-size: 60px;
+  color: black;
+}
+
+
+
+.menuHolder
+{
+  margin-left: 100px;
+  display: flex;
+  flex: 4;
+  justify-content: space-between;
+}
+
+.menuItem1 {
+  display: inline-block;
+  padding:10px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: solid 1px black;
+  margin: 10px;
+  background-color: gray
+}
+
+.menuItem2 {
+  display: inline-block;
+  padding:10px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: solid 1px black;
+  margin: 10px;
+  background-color: gray
+}
+
+.menuItem3 {
+  display: inline-block;
+  padding:10px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: solid 1px black;
+  margin: 10px;
+  background-color: gray
+}
+
+.menuItem4 {
+  display: inline-block;
+  padding:10px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: solid 1px black;
+  margin: 10px;
+  background-color: gray
+}
+
+.menuItem5 {
+  display: inline-block;
+  padding:10px;
+  transition: 0.3s;
+  cursor: pointer;
+  border: solid 1px black;
+  margin: 10px;
+  background-color: gray
+}
+
+.menuItem1:hover
+{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: yellow;
+}
+
+.menuItem2:hover
+{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: yellow;
+}
+
+.menuItem3:hover
+{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: yellow;
+}
+
+.menuItem4:hover
+{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: yellow;
+}
+
+.menuItem5:hover
+{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.3s;
+  color: yellow;
+}
+
+.main {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 5px solid red;
+  height: 100%;
+  width: 100%;
+
+}
+
+.left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 45px;
+  background-color: #333;
+  color: #fff; 
+  padding: 20px; 
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+}
+
+.noshow {
+  display: none;
+}
+
+.show {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.jerseys{
-  width: 500px;
-  height: 400px;
-  margin: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.Team_pic{
+  height: 200px;
+  width: 200px;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+.thumb:hover {
+  x-webkit-transform: scale(1.1);
+  xtransform: scale(1.1);
+  transition: 0.3s;
+  xborder: 2px solid #283e29;
+  xbox-shadow: 5px 5px 5px #283134;
+  outline:2px solid black;
+
+}
+
+.container {
+  display: inlineflex;
+  flex-wrap: wrap;
+  width:100%;
+  height: 100%;
+  max-width:450px;
+  padding: 10px;
+
+}
+#Team{
+  font-size: 30px;
+}
+
+#show2{
+  font-size: 20px;
+}
+
+#show3{
+  font-size: 30px;
+}
+#show4{
+  font-size:30px;
+}
+#show5 {
+  font-size: 30px;
+}
+
+
+@media only screen and (max-width: 700px) 
+{
+
+  .div2 {
+    display: none;
+  }
+
+  .Team_logo {
+    width:100px;
+    height:100px;
+  }
+
+  .Team_pic{
+    width:100px;
+    height:100px;
+  }
+
+  .div3 { grid-area: 2 / 1 / 11 / 21; }
+
+
 }
